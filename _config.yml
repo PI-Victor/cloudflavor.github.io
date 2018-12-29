@@ -1,0 +1,51 @@
+# Set theme
+remote_theme: daviddarnes/alembic
+
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+# Set plugins
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji
+- jekyll-remote-theme
+
+# Site settings
+url: 'https://cloudflavor.io'
+baseurl: ''
+title: 'Cloudflavor Org'
+description: 'FOSS Org Cloudflavor'
+permalink: pretty
+logo: "../assets/cloudflavor.png"
+
+# Pagination
+paginate: 5
+paginate_path: blog/page:num
+
+# Header nav
+navigation_header:
+  Home: /
+  About: /about/
+  #Blog: /blog/
+
+# Footer nav
+navigation_footer:
+  Back to top: "#top"
+
+# Collections
+collections:
+  posts:
+    title: Posts
+    output: true
+    description: "My thoughts and ideas"
+    feature_text: |
+      Welcome to my blog
